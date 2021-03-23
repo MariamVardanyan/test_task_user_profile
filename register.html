@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My WebSite</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                    <div class="wrapper" style=" height: 100%;">
+                        <nav id="sidebar">
+                            <div class="sidebar-header">
+                                <h3>Bootstrap Sidebar</h3>
+                            </div>
+
+                            <ul class="list-unstyled components">
+                                <p>Dummy Heading</p>
+                                <li class="active">
+                                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                                        <li>
+                                            <a href="#">Home 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="users_link">Users</a>
+
+                                </li>
+                                <li>
+                                    <a href="#" id="login_link">Log In</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+            </div>
+            <div class="col-md-8">
+                <h1 class="text-center">Register</h1>
+                <div id = "box" class="alert alert-danger" role="alert" style="display: none">
+                    This is a danger alert—check it out!
+                </div>
+                <p class="text-center">Please fill in this form to create an account.</p>
+               <div class="d-flex justify-content-center form-div">
+                <form>
+
+                    <hr>
+                    <div class="form-group">
+                        <label for="name"><b>Name</b></label><hr>
+                        <input id="name" class="form-control registration_input" type="text" placeholder="Enter Name" name="name" >
+                            <div class=" checkInput mt-2 " id = "name_p" style="display: none;color: red">
+                                The Name field is required
+                            </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><b>Email</b></label><hr>
+                        <input id="email" class="form-control registration_input" type="email" placeholder="Enter Email" name="email" >
+                            <div class=" checkInput mt-2 " id = 'email_p' style="display: none;color: red">
+                                The Email field is required
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label fplease fill in the formor="passsword"><b>Password</b></label><hr>
+                        <input id="password" class="form-control registration_input"  type="password" placeholder="Enter Password" id="psw" >                
+                            <div class=" checkInput mt-2 " id="psw_p" style="display: none;color: red">
+                                The Password field is required
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password_repeat"><b>Repeat Password</b></label><hr>
+                        <input class="form-control registration_input"  id="password_repeat" type="password" placeholder="Repeat Password" id="psw_repeat" >
+                            <div class=" checkInput mt-2 " id = "psw_repeat_p" style="display: none;color: red">
+                                The Repeat Password field is required
+                            </div>
+                    </div>
+                    <hr>
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    <div class="form-group d-flex justify-content-center ">
+                        
+                        <button type="button" id="btn" class="btn align btn-success btn-lg" >Register</button>
+                    </div>
+
+                  
+
+                  <div class="container signin">
+                    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+                  </div>
+                </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>  
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="js/register.js" defer></script>
+</body>
+</html>
